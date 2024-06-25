@@ -1,0 +1,78 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color:#bafc9d;
+  --color1:#00709e;
+  --color2:rgb(0,0, 0);
+  --color3:#fff;
+}
+body{
+  background: var(--color2) !important;
+  color: var(--color1) !important;
+}
+.title{
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid var(--color);
+  border-radius: 10px;
+}
+.title h1 span{
+  color: var(--color);
+  font-weight: bold;
+}
+.inputDiv{
+  padding: 20px 0px;
+}
+.inputDiv span{
+  margin-right:10px;
+  color: var(--color);
+  padding:8px 10px;
+  font-size: 18px;
+  background-color: var(--color1);
+  border-radius: 50%;
+  font-weight: bold;
+}
+.inputDiv button{
+  background-color: var(--color1);
+  padding: 5px 10px;
+  border: 1px solid var(--color1);
+  border-radius: 5px;
+  color: var(--color3);
+  font-size: 18px;
+  font-weight: bold;
+  transition: ease-in-out;
+}
+.inputDiv button:hover{
+  background-color: var(--color2);
+  color: var(--color);
+  border: 1px solid var(--color);
+  transition: all ease-in-out;
+}
+.tiffin_record {
+  margin: 20px 0px;
+}
+.tiffin_record .card_tiffin{
+  padding: 20px;
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+  cursor: pointer;
+}
+.tiffin_record .card_tiffin p{
+  color: var(--color);
+}
+
+@media (max-width: 1200px){
+  .inputDiv{
+    flex-direction: start !important;
+    align-items: start !important;
+    text-align: left !important;
+  }
+  .inputDiv .col-xl-3{
+    margin-top: 10px;
+  }
+}
